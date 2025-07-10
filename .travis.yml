@@ -20,11 +20,11 @@ after_failure:
   - echo failed
   - echo $TRAVIS_TEST_RESULT
 
-# deploy:
-#   strategy: git
-#   provider: pages
-#   cleanup: true
-#   token: $test-token
-#   keep_history: true
-#   on:
-#     branch: main
+deploy:
+  strategy: git
+  provider: pages
+  cleanup: true
+  token: $test-token
+  keep_history: true
+  on:
+    branch: main
