@@ -24,7 +24,7 @@ deploy:
   strategy: git
   provider: pages
   cleanup: true
-  token: $test-token
+  token: $test_token
   keep_history: true
   on:
     branch: main
